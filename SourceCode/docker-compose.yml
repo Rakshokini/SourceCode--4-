@@ -1,0 +1,25 @@
+ version: "3.7"
+ services:
+
+   node1:
+     container_name: Node1
+     build: Node1/.
+
+   node2:
+     container_name : Node2
+     build: Node2/.
+
+   node3:
+     container_name : Node3
+     build: Node3/.
+   node4:
+     container_name : Node4
+     build: Node4/.
+   node5:
+     container_name : Node5
+     build: Node5/.
+   controller:
+       container_name: Controller
+       build: Controller/.
+       stdin_open: true
+
